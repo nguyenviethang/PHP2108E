@@ -2,9 +2,60 @@
  + VD: <link rel="icon" sizes="57x57" type="image/png" href="images/57x57.png">
 
 - Học thẻ HTML nên học theo nhóm thẻ theo cùng tính chất, công dụng. không cần nhớ hết, và không thể nhớ hết. 
- + nhóm thẻ định dạng văn bản tiêu đề. VD: h1, h2, p, em, i, ..
- + không lạm dụng các thẻ định dạng văn bản(in nghiêng, in đạm, bôi vàng...) trừ trường hợp SEO web, thường đê CSS làm
+
+    + nhóm thẻ định dạng văn bản tiêu đề. VD: h1, h2, p, em, i, ..
 
 
-<h7></h7> không phải là thẻ HTML, trình duyệt chỉ đọc dịch là một đoạn text và nó VẪN HIỆN THỊ RA TRÌNH DUYỆT, và không tuân theo format của HTML
-DÙ VIẾT SAI cú pháp HTML thì vẫn hiện thị ra trình duyệt và trình duyệt sẽ không báo lỗi
+    + HTML liên kết và siêu liên kết(bấm thẻ lập tức chuyển sang trang khác không liên quan đến trang vừa truy cập)
+        vd: <a target="_blank" title="wiki" href="http://en.wikipedia.org/wiki/">wiki</a>  target="_blank"--> thuộc tính này khi click vào sẽ bật ra tab mới
+        <a href="#title">wiki</a> --> #: (neo link, anchor link) dấu # sẽ tìm đến id của phần tử nào đấy, ví dụ như đây thì #titile thì nó không đi ra khỏi trang HTML mà nó đi tìm phần tử có chửa ID tên là "title" để tác động vào, Nếu để nguyên duy nhất dấu # thì sau khi click vào thẻ a sẽ đẩy lên trên cùng của trang
+        <a href="javascript:void(0);"> không có hieu ứng link di đâu cả</a>
+
+    + HTML danh sách : ul li, ol li --> ứng dụng làm menu
+
+    + HTML về bảng biểu dữ liệu: table (thead, tbody, tfoot)(tr, td) tfoot có thể không có nhưng thead va tbdy nhất định phải có
+            + <table>
+                <thead>
+                    <tr></tr>
+                </thead>
+            </table>  --> table là thẻ cha của thead, thead là thẻ cha của tr, tr là thẻ trong của thẻ table và table là thẻ ngoài của tr chứ không thể gọi là thể ông bà của thẻ tr
+            + tr tạo ra hàng
+            + th tạo ra tiều đề cột(nằm trong thead > tr) nó sẽ in đậm
+            + td tạo ra ô(nằm trong tbody > tr)
+            + tfoot thường dùng để thóng kê bảng
+            + thuộc tính colspan dùng gôm cột tạo ra một ô trống kéo dài theo hàng ngang và rowspan dùng để để gom hàng tạo ô tróng kéo dài dạng đứng, hai thuộc tính này chỉ tác động vào td và td, KHÔNG BAO GIỜ TÁC ĐỘNG VÀO thẻ tr, cột bị xóa bởi colspan sẽ nằm chung trong 1 tr trong khi rowspan ô bị xóa nằm khác tr
+            + không ai dùng table để chia layout, cột trái phải đâu vì thẻ table rất khó để reponsive nó dùng mục đích duy nhất là để hiện thi ra dữ liệu thôi
+    + nhóm thẻ về multi media: img
+
+
+    + nhóm thẻ HTML form(thường làm form đăng ký, đăng nhập): form, label, input, button, textarea, select > option(thuộc tính value="")
+        + bản chất thẻ form để dùng gửi dữ liệu đi
+           + thuộc tính action là nơi để gửi dữ liệu lên: Vd <form action="server/login.php"></form> sẽ gửi dữ liệu trong form lên file login.php trong server để xử lý
+           + method là thuộc tính quy đinh phương thúc gửi dữ liệu đi:  VD: <form action="server/login.php" method="post"></form>
+        + thuộc tính của input: type="password/number/text/email/url/color/date/radio/checkbox"--> input có nhiều loại type, minlenght(số kĩ tự tối thiểu), maxlenght(chỉ dành cho type="text"), requied-> thuộc tính này bắt nhập dữ liệu mới 
+        được submit
+            + thuộc tính readonly và disabled đề không cho người dùng nhập dữ liệu vào nhưng nó khác nhau ở chỗ disabled cấm luôn việc gửi dữ liệu đi còn redonly vẫn cho gửi dữ liệu đi được
+            + thuộc tính checked dùng để tự động chọn dành cho thuộc tính type="checkbox/radio"
+        + thuộc tính của button: tye="submit" dùng dùng để gửi dữ liệu đi
+        + thẻ textarea cho phép nhập dữ liệu trên nhiều dòng, nó có các thuộc tính như row gồm bao nhiêu dòng và col là bao nhiêu cột
+
+    + nhóm thẻ HTML layout
+
+
+
+
+
+
+- không lạm dụng các thẻ định dạng văn bản(in nghiêng, in đạm, bôi vàng...) trừ trường hợp SEO web, thường đê CSS làm
+- <h7></h7> không phải là thẻ HTML, trình duyệt chỉ đọc dịch là một đoạn text và nó VẪN HIỆN THỊ RA TRÌNH DUYỆT, và không tuân theo format của HTML
+- DÙ VIẾT SAI cú pháp HTML thì vẫn hiện thị ra trình duyệt và trình duyệt sẽ không báo lỗi
+
+- Khái kiệm: html liền kề, HTML trước sau ứng dụng trong css
+- trong mỗi thẻ HTML có các thuộc tính ID,class và các thuộc trính bổ trợ như href, src, width, height, alt, style, title...
+- Giá trị của thuộc tính được bọc trong dấu ngoặc kép, trừ trường hợp giá trị thuộc tính có dùng dấu ngoặc kép thì phải thay bằng dấu ngoặc đơn bọc bêng ngoài vd: <p title='John "ShotGun" Nelson'>
+- ID và class dùng để định danh cho một thẻ nào HTML nào đấy thường để css cho phần tử đấy, ID là duy nhất và số lượng chỉ 1 trong khi dùng, class thì ngược lại
+- Thuộc tính class có phép định danh nhiều giá trị VD: <h1 class="title1 title2 ">Nguyen viet thang</h1>
+
+- HTML Block đứng riêng 1 dòng
+-HTML inline đứng ngay cạnh nhau
+--> hiểu được HTML block và inline giúp hiểu cách css(?)
