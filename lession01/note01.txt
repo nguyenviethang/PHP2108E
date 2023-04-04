@@ -1,0 +1,35 @@
+- không có ngôn ngữ lập trình nào toàn năng, có vai trò và chức năng riêng cho từng lĩnh vực khác nhau, có thế mạnh và điểm yếu khác nhau trong từng lĩnh vực
+
+
+- không nên có tư tưởng ngôn ngữ này hơn ngôn ngữ kia, ==> biết một mà không biết nhiều
+
+
+- quy trình phát triển phần mền
++ tiếp nhập các request đén từ khách, từ xếp hoặc bất kỳ ai, và request được tiếp nhận qua BA
++ sau khi tiếp nhận BA se decord cho đội bên kỹ thuật, họp với bên teamLead, teamLead phản biện lại nhưng yêu câu nào làm được, nhưng yêu cầu nào là bất hợp lý, nhưng yêu cầu không đúng, không đúng thì chuyển sang nghiệp vụ nào chẳng hạn
++ ông design se thiết kế lại cho ông BA xem đúng ý chưa, nêu đúng ý thì để yêu cầu về ông FE
++ FE sẽ lập trìhh để chạy trên giao diện web tĩnh và lại phản hồi cho BA xem đúng ý chưa.
++ Nếu đúng ý thì đây cho ông BE
++ Mọi thứ xong rồi thì đẩy cho ông Tester kiểm thử
+
+- FE có thể không biết về BE nhưng BE thì phải biết một chút về HTML, CSS, JS
+
+
+- Fullstack thường là ông senior(teamlead)
+- Hưởng lương theo năng lực
+
+- HTML, CSS không phải là ngôn ngữ lập trình, Nó là ngôn ngữ đánh dấu siêu văn bản, sieu văn bản là dạng ngôn ngữ bao ngồn có text, hình ảnh âm thanh và chạy trên môi trường trình duyệt, ngôn ngữ đánh dấu là ngôn ngữ dùng các thẻ để trình duyệt đọc hiểu, ví dụ dùng hình ảnh thì dùng thẻ img để trình duyệt hiểu đánh dấu lại và đọc dịch ra hình ảnh, nếu dùng các thẻ khác thì trình duyệt không đọc được
+
+- HTML đóng vai trò như khung xương của giao diện web
+
+- <!DOCTYPE html> => báo phiên bản HTML5
+- Có hai dạng thẻ HTML gồn đơn và kép
+-  Đôi với thẻ HTML đơn thì từ HTML4 trở xuống phải có thẻ đóng(có dấu / ở gần cuối thẻ) VD:  <meta charset="UTF-8"/> 
+
+- <meta charset="UTF-8"> => chế độ hiện thị các ký tự văn bản dạng UTF8
+- <meta http-equiv="X-UA-Compatible" content="IE=edge"> => ưu tiên hiện thị trên trình duyệt edge của microsoft
+- <meta name="viewport" content="width=device-width, initial-scale=1.0"> => quy ước hiện thi trên các thiết bị, hỗ trợ reponsive, độ rộng hiện thị giống nhau trên các thiết bị. content="width=device-width => độ rộng bằng thiết bị của nó. initial-scale=1.0" => độ phóng scale tỷ lệ 1:1
+
+
+
+

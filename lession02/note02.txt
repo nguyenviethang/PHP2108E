@@ -1,0 +1,10 @@
+- Hiện thị ảnh favicon(ảnh logo hiện thị trên tab trình duyệt)
+ + VD: <link rel="icon" sizes="57x57" type="image/png" href="images/57x57.png">
+
+- Học thẻ HTML nên học theo nhóm thẻ theo cùng tính chất, công dụng. không cần nhớ hết, và không thể nhớ hết. 
+ + nhóm thẻ định dạng văn bản tiêu đề. VD: h1, h2, p, em, i, ..
+ + không lạm dụng các thẻ định dạng văn bản(in nghiêng, in đạm, bôi vàng...) trừ trường hợp SEO web, thường đê CSS làm
+
+
+<h7></h7> không phải là thẻ HTML, trình duyệt chỉ đọc dịch là một đoạn text và nó VẪN HIỆN THỊ RA TRÌNH DUYỆT, và không tuân theo format của HTML
+DÙ VIẾT SAI cú pháp HTML thì vẫn hiện thị ra trình duyệt và trình duyệt sẽ không báo lỗi
