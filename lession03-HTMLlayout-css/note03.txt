@@ -1,0 +1,15 @@
+HTML layout sẽ thiết kế theo quy tắc
+từ trên xuống dưới từ trái sang phải, từ ngoài đi vào trong, từ tổng quát đến chi tiết
+
+tại sao phải cho thẻ link css lên phần header của HTML? vì file HTML run từ trên xuống dưới file css sẽ được chạy trước khi chạy đến phần HTML trong thẻ body giúp hiện thị thuộc tính của thẻ trước, tạo hiệu ứng performentce, khi người ta vào trang web sẽ thấy đẹp ngay mà không mất thời gian load giao diện
+
+ưu điểm khi dùng css ngoại tuyến? brower có chức năng caching- đẩy dữ liệu vào bộ nhớ đệm của trình duyệt. nó chỉ cace văn bản hTML thôi, còn văn bản css, js không caching lại nên vậy dùng thẻ link css và sctrip JS để caching để lần sau không đọc dịch lại và load lại nữa vậy nên lần đầu vào web sẽ phải load để đọc dich file, và các lần tiếp theo KO cần đọc dịch nữa, -->cảm giác tốc độ vào web nhanh hơn.
+ và css ngoại tuyến giúp css được đồng bộ với những thể cùng thuộc tính,--> nhanh gọn hơn css cục bộ
+
+Cách nhúng 1 file css vào một file css khác để kế thừa và sự dụng lại được file đã nhúng đấy, cú pháp: @import "demo.css";
+
+
+cú pháp CSS:
+selector {
+    thuộc tính: value;
+}
