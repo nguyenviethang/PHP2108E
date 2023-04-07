@@ -1,0 +1,36 @@
+@import "reset.css";
+
+#title {
+  color: yellow;
+}
+h1 {
+  color: red;
+}
+.title {
+  color: green;
+}
+
+/**attribute selector*/
+input[type="text"] {
+  border: 2px solid red;
+}
+
+input[class~="input-pass"] {
+  border: 2px solid green;
+}
+
+input[class*="pass"] {
+  border: 2px solid rgb(223, 10, 63);
+}
+
+a[href$=".net"] {
+  color: red;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+a[class|='link'] {
+    color: rgb(215, 230, 14);
+  }

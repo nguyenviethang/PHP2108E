@@ -13,3 +13,58 @@ cú pháp CSS:
 selector {
     thuộc tính: value;
 }
+
+- không cần thiết phải hoc thuộc lòng html css, code nhiều thi tự khắc nhớ, làm nhiều có kinh nghiệm và sẽ nhớ
+- css sẽ ưu tiên ID  > class > thẻ, với 2 selector giống nhau thì selector dưới cùng gi đè lên selector trên, vậy nên selector dưới cùng sẽ được hiện thị
+ - Universal selector :"*" sẽ tác động vào mọi phần tử html
+ thông thường dung để reset CSS
+ - hiện thị html css trên mọi trình duyệt khác nhau là khác nhau, vậy nên cần có reset css để đồng bộ nhất quán sản phẩm trên mọi trình duyệt
+ - cần reset những thuộc tính nào? margin: 0; padding: 0; và còn nhiều nữa--> dùng tool này để lấy file reset: https://meyerweb.com/eric/tools/css/reset/
+ - để reset css, copy code css trong link trên và paste vào 1 file trong thư mục css và link vào file html đang làm, hoặc import vào file css đang là(cách này tốt nhất) VD: @import 'reset.css';
+
+-ta có thể lấy thuộc tính HTML để làm selector cho css
+VD: input[type="text"] {
+    border: 2px solid red;
+}
+input[class~="input-pass"]{
+    border: 2px solid green;
+}
+ dấu ~= dùng để tìm kiếm chính xác 1 trong nhiều GIÁ TRỊ của thuộc tính, trong khi dấu bằng tìm kiếm chính xác 100% giá trị của thuộc tính, như vậy phạm vi của dấu bằng sẽ chặt chẽ, chính xác hơn rất nhiều so với ~=, dấu ~= sẽ link hoạt hơn, mền dẻo hơn
+
+ Vd: input[class*='pass']{
+    border: 2px solid rgb(223, 10, 63);
+}
+==> *= tìm kiếm gần đúng các KÝ TỰ có trong thuộc tính
+
+==> vậy nên *= còn linh hoạt hơn nhiều so với ~=
+
+   <a href="https://vnespress.net">vnespress</a>
+VD: a[href$='.net'] {
+    color: red;
+}
+
+==> $= tìm kiếm đến kí tự nào kết thúc value của thuộc tính
+
+a[href^="https"] {
+  color: green;
+}
+
+=> ^= tìm kiếm đến kí tự nào đầu tiên value của thuộc tính
+
+=> khi xử lý vấn đề, bình tính, không nóng vội, đề bài đổi một chút, đánh lừa--> không để ý, mắc sai lầm
+
+    <a class="link-item links" href="http://facebook.com">kenh 14</a>
+VD: a[class|='link'] {
+    color: rgb(215, 230, 14);
+  }
+|=  => tìm kiếm giá trị đầu của thuộc tính và đứng trước dấu gach ngang, ví dụ như trên link-item, kí tự sau dấu gach ngang, |= không quan tâm
+
+
+- Các loại selector phân cấp, tác dụng mô phỏng lại được cáu trúc cảu văn bản tài liệu HTML
+
+  + tag01 + tag02 : chọn tất cả thành phần tag02 liền kề và sau tag01
+  + tag01 ~tag02: chọn tất cả thành phần tag02 khi có thành phần tag01 ở trước
+  + tag01 > tag02: chọn tát cả thành phần tag02 co thành phần cha là tag01
+  + tag01 tag02: chọn tất cả thành phần tag02 bên trong thành phần tag01
+  + tag01,tag02: chọn tát cả thành phần tag01 và tag02
+ 

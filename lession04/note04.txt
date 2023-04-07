@@ -1,0 +1,64 @@
+- :first-of-type: đi tìm những(nhiều) thành phần con đầu tiên . tìm những loại html-> tác động lên html đầu tiên xuất hiện của loại html đó
+first-child: tìm thành phần con đầu tiên
+last-child: tìm thành phần con cuối cùng
+last-of-type: đi tìm những(nhiều) thành phần con cuối cùng . tìm những loại html-> tác động lên html cuối cùng xuất hiện của loại html đó
+
+nth-child(): đi tìm thứ tự của thằng con vị trí số bao nhiều nằm trên xuống dưới(đếm bắt đầu từ 1)- không phân biết loại con, đếm theo thứ tự
+
+
+nth-of-type(): tìm vị trí của những loại con ở TỪ vị trí chúng ta mong muốn
+
+
+=> last-child >< first-child 
+=> first-of-type >< last-of-type 
+
+=> nth-child() >< nth-last-child()
+=> nth-of-type() >< nth-last-of-type()
+
+:only-child => chọn thành phần con trong thành các thành phần cha, khi thành phần cha có mỗi thành phần con là chính nó, không được chứa thành phần con khác, chỉ chọn thành phần có thành phần cha, những thành phần độc lập sẽ không được chọn
+
+:focus => thành phần sẽ focus khi được chọn
+:checked => chọn các thành phần đã checked(dùng checkbox hoặc radio)
+
+Anchor psedo class: lớp giả định nghĩa style cho các trạng thái link
+:active => chọn các đường liên kết đã chọn
+:visited => định dạng cho các thành phần đã được click
+:link => định dạng cho tất cả liên kết khi chưa được click
+:hover => chọn các liên kết được hover(khi di chuột lên thành phần)
+
+
+thành phần giả (psedo element)
+- ::first-letter => phần tử mô tả cho ký tự đầu tiên của đoạn văn
+- ::first-line => quy định style cho dành đầu iên đoạn văn
+- ::after => chèn nội dung phía sau nội dung của một thành phần
+- ::before => chèn nội dung phía trước nội dung của một thành phần
+- ::selection => hiện thị hiệu ứng css khi văn bản được chọn (bôi đen)
+
+ ::first-letter có độ ưu tiên cao hơn so với ::first-line, dù có code trên ::first-line thì ::first-letter vẫn được hiện thị
+
+- đơn vị khi dùng css
+%, em, rem, px chủ yếu
+khi nào dùng đơn vị %: khi biết kích thước bao ngoài của phần tử cha
+1em = kích thước font chữ kiện tại
+thông thường đơn vị em xử lý vùng giao diện nhỏ, còn rem khai báo cho các thành phàn to, tổng quan như thẻ H1, HTML, body
+chế độ mặc đinh trên trình duyệt :
+16px = 1rem = 100%
+1rem = 10px = 62.5%
+phạm vi hoạt động của rem lớn hơn em,
+ rem,em sẽ ăn theo tỷ lệ font chữ đã chọn, giúp tránh ăn theo tỷ lệ kích thức màn hình, nhiều thiết bị khác nhau nên tỷ lệ pixel khác nhau, nếu để đơn vị px thì sau này rất khó reponsive
+
+
+ đơn vị màu sắc thường dùng: 
+ - đươn vị hexa(thường dùng 60%): VD : #ffffff
+ - đơn vị RGB(dùng chiếm 30%): VD tgb(255, 0 ,0) hoặc rgb(100%, 0%, 0%)
+ - color_name: được dùng rất ít VD: Red, Green, Blue
+ QA là người giám sát chát lượng sản phẩm
+
+
+ - kế thừa trong CSS 
+ các phần tử con sẽ kế thừa một số thuộc tính từ phần tử cha. hay có thể nói phần tử cha truyền một số thuộc tính xuống phần tử con. (chỉ có những thuộc tính cơ bản dùng được)
+ ghi đè(over-ride) thuộc tính của phần tử cha (over-rule)
+
+- Ghi nhớ trước khi dùng mảgin và padding thì phải reset css trước
+
+

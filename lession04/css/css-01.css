@@ -1,0 +1,77 @@
+@import 'reset.css';
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.container :first-child {
+    color: red;
+
+}
+div.container :last-child {
+    color: blue;
+
+}
+div.container :first-of-type {
+    color: yellow;
+}
+div.container :last-of-type {
+    color: green
+}
+div.container :nth-child(4) {
+    color: pink;
+}
+div.container :nth-of-type(4) {
+    color: rgb(245, 18, 245);
+}
+div.container :nth-last-child(3) {
+    color: brown;
+}
+div.container :nth-last-of-type(3) {
+    color: blueviolet
+}
+div.box :only-child {
+    color: red;
+}
+input[type='text']:focus {
+    width: 500px;
+    height: 30px;
+    border: 1px solid red;
+    outline: none;
+}
+input[type='checkbox']:checked {
+    width: 200px;
+    height: 200px;
+}
+a.link:active {
+    color:yellow
+}
+a.link:visited {
+    color: red;
+}
+a.link:link {
+    color: black;
+}
+a.link:hover {
+    color:violet;
+}
+div.content p.text::first-letter {
+    color: red;
+    font-size: 24px;
+}
+div.content p.text::first-line {
+    color: green;
+}
+div.content p.text::before {
+    /* content: 'hello thang' */
+    content: url('../../lession02/images/57x57.png')
+}
+div.content p.text::after {
+    /* content: 'hello thang' */
+    content: url('../../lession02/images/57x57.png')
+}
+div.content p.text::selection {
+    color: yellow;
+}
