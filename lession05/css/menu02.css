@@ -1,0 +1,40 @@
+@import 'reset.css';
+@import 'fontawesome.css';
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* ./reset css */
+root {
+    --bgNav: #282828;
+    --textColor: #Fd7437;
+    --textHoverColor: #e6ffff;
+
+}
+
+ a {
+    text-decoration: none;
+ }
+ ul li {
+    list-style-type: none;
+ }
+ .nav {
+    width: 100%;
+    background-color: var(--bgNav);
+    height: 4rem;
+    border-top: 3px solid var(--textColor);
+    display: flex;
+
+ }
+ .nav__container {
+    width: 98rem;
+    margin: 0 auto;
+    display: flex;
+ }

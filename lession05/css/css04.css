@@ -1,0 +1,37 @@
+@import 'reset.css';
+
+.container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+
+}
+.col {
+    width: 150px;
+    height: 300px;
+}
+.col-1 {
+    background-color: rgb(205, 240, 228);
+}
+.col-2 {
+    background-color: rgba(97, 243, 194, 0.801);
+}
+.col-3 {
+    background-color: rgb(47, 238, 174);
+}
+.col-4 {
+    background-color: rgb(28, 223, 158);
+}
+.col-5 {
+    background-color: rgb(30, 179, 129);
+}
+.col-6 {
+    background-color: rgb(14, 139, 98);
+}
+.col-7 {
+    background-color: rgb(9, 102, 71);
+}
+.col-8 {
+    background-color: rgb(4, 63, 43);
+}
