@@ -22,34 +22,35 @@ html {
   /* 1rem = 10px */
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1;
   font-weight: 400;
 }
 /* dinh nghia cac bien css dung chung */
 :root {
-    --primary-color: #64c29e;
-    --heading-color: #4d4959;
-    --text-color: #848789;
-    --bg-light: #f7f7f7;
-    --bg-while: #ffffff;
-    --bg-dark: #282f35;
-
+  --primary-color: #64c29e;
+  --heading-color: #4d4959;
+  --text-color: #848789;
+  --bg-light: #f7f7f7;
+  --bg-while: #ffffff;
+  --bg-dark: #282f35;
+  --bg-black:#353738;
 }
 
 /* end setting css basic */
 
 a {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
-input, textarea, button {
-    outline: none;
-    box-shadow: none;
-    font-family: 'Lato', sans-serif;
+input,
+textarea,
+button {
+  outline: none;
+  box-shadow: none;
+  font-family: "Lato", sans-serif;
 }
 
 .wrapper {
@@ -62,7 +63,7 @@ input, textarea, button {
   background-image: url(../images/logo-yebo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:  center center;
+  background-position: center center;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -80,13 +81,13 @@ input, textarea, button {
   position: relative;
 }
 /* css cho dau cham menu */
-.nav__item:first-child::after, .nav__item:nth-child(4)::after {
+.nav__item:first-child::after,
+.nav__item:nth-child(4)::after {
   content: ".";
   position: absolute;
   right: 0;
   bottom: 0;
   font-size: 2rem;
-
 }
 .nav__link {
   position: relative;
@@ -95,5 +96,23 @@ input, textarea, button {
   color: var(--heading-color);
   font-weight: 700;
   font-size: 1.3rem;
-
 }
+.section1 {
+  height: 47rem;  
+  background-color: var(--bg-light);
+}
+.section1__logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 11.6rem;
+  margin-bottom: 3.4rem;
+}
+main > section > h1 {
+  color: var(--bg-black);
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+
