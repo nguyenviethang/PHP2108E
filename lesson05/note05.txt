@@ -1,0 +1,57 @@
+học về display:
+có nhiều thuộc tính display gồm, display block, display inline.... phổ biến là display flex
+ flex-direction: row,  row-reverse, column, column-reverse (hướng của hàng, ngang, dọc....)
+ flex-wrap: nowrap, wrap, wrap-reverse (các mục được bọc trong 1 khung và thuộc tình quyết đinh có ngắt dòng theo hàng tiếp theo hay không(chỉ áp dung khi chiều rộng kết hợp với sô mặt hàng lơp shown container))
+ justify-content: flex-start, flex-end, center, space-around, space-between. (căn chỉnh theo trục ngang của màn hình (Ox))
+ align-items: stretch, baseline, center, flex-start, flex-end (căn chỉnh theo truc dọc của màn hình (Oy))
+ align-content: stretch, baseline, center, flex-start, flex-end, space-around, space-between. (chỉ áp dụng co nhièu hơn 1 hàng của tổng sô hàng)
+
+ người ta hay dùng display flex thay vì displey block, inline, inline-block, lít-item vì có nhưng nhược điểm không hay
+ 
+ các thuọc tính width và height là thuộc tính vốn có của thẻ block, không phải của thẻ inline nên display inline thì không dùng được 2 thuộc tính trên
+ bản chất các thẻ div là thẻ block khi hiện thị mặc định là hiện thị nằm trên dưới, khi dùng display: inline-block thì muốn kế thừa nhưng đặc tính của thẻ inline và của thẻ block, trong thi các thẻ inline khi nằm cạnh nhau luôn có khoảng cách mặc đinh ngăn các hai thẻ đấy
+
+thuộc tính position trong css: giúp di chuyển phần tử không ảnh hưởng đén phần tử khác
+
+khi dùng các thuộc tính top, bottom, lèt right để căn chỉnh đối tượng thì không nên dùng các thuộc tính đối xứng ví dụ cặp left right, top bottom,
+vi du: 
+.position img {
+    position: relative;
+    top: 300px;
+    bottom: 500px
+
+} -> trường hợp này chỉ nhận thuộc tính top
+
+z-index: xét vị trí xếp chồng lên nhau giữa các phần tử
+
+Quy tắc đặt tên biến trong css: BEM
+
+block__element--Modifile(khối__phần tử--đặc trưng)
+block: là một khối, là một thành phần lớn cần xử lý
+element: là phần tử nằm trong khối đó
+Modifile: M đây có 2 biên thể, MOdifile sanh cho block hoặc modilfe dành cho element
+
+biến trong css : mục đích dùng để TÁI SỰ DỤNG CODE
+:root {
+    --tên_biến: giá trị;
+}
+ví dụ:
+
+
+:root {
+    --bg-light: #f7f7f7;
+}
+ .box {
+    background-color: var(--bg-light);
+ }
+
+
+  cách dùng font-awesome:
+  b1: tải file và giải nén từ web : https://fontawesome.com/download
+  b2: copy thư mục webfonts ngang hàng thư mục css trong project
+  b3: vào thư mục css của file vừa giải nén, copy file all.css và paste vào thư mục css cảu project đang làm và đổi tên hợp lý
+  b4: link file css vào file html cần thêm icon
+  b5: dùng icon, vào https://fontawesome.com/icons và seach, chọn icon và copy đoạn html và paste vào đoạn code dự án
+
+
+  nên dùng file min trong môi trường production để tiết kiện tối đa dung lượng cho dự án--> load nhanh hơn--> performent tốt hơn
