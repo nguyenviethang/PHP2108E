@@ -1,5 +1,5 @@
 <?php
-//isset()
+// isset()
 // $a = null;
 // if(isset($a)) {
 //     echo $a;
@@ -13,7 +13,7 @@
 // unset($a);
 // echo $a;
 
-//empty($a);
+// empty($a);
 
 // $a = null;
 
@@ -24,32 +24,32 @@
 // }
 
 
-//gettype($a);
+// gettype($a);
 
 // $a = 10;
 // echo gettype($a);
 
-//settype($a);
+// settype($a);
 // $a = 10;
 // settype($a,"string");
 // echo gettype($a);
 
-//intval($a);
+// intval($a);
 // $a = '10';
 // $b = intval($a);
 // echo gettype($b);
 
-//strval();
+// strval();
 // $a = 10;
 // $b = strval($a);
 // echo gettype($b);
 
-//floatval();
+// floatval();
 // $a = 10;
 // $b = floatval($a);
 // echo gettype($b);
 
-//is_numeric($a);
+// is_numeric($a);
 
 // $a = "thang" ;
 // if (is_numeric($a)) {
@@ -58,7 +58,7 @@
 //     echo "not numeric";
 // }
 
-//count($arr);
+// count($arr);
 // $arr = [
 //     10,
 //     20,
@@ -67,14 +67,14 @@
 // echo count($arr);
 // echo "<br/>";
 
-//in_array();
+// in_array();
 // if (in_array(10, $arr)) {
 //     echo "yes";
 // }else {
 //     echo "no";
 // }
 
-//array_key_exists();
+// array_key_exists();
 //  $fruits = array (
 //     1 => "apple",
 //     2 => "banana",
