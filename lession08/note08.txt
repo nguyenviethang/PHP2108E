@@ -1,0 +1,16 @@
+- js là ngôn ngữ script ở client, dùng để xử lý  va tương tác  các thành phần HTML (đang xét khía cảnh client)
+- js la ngôn ngữ thông dịch(khi trình thông dịch gặp code ở đâu thì dịch ngay và trả ngay kết quả ở đó)
+         note: so sánh trình thông dịch và trình biên dịch, cái nào nhanh hơn? tùy thuộc vào môi trường, môi trường devlopment thì thông dich nhanh hơn, production thì biên dịch nhanh hơn. lý do là ở production biên dịch đã byte ra mã máy một lần rồi và lần sau không cần mất thời gian byte tiếp code cũ, thông dịch thì chạy lần nào, byte lần đấy--> code cành nhiều, byte càng lâu
+ - chỉ thực hiện trên trình duyệt
+ - cứ pháp đơn giản, giống c/c++
+
+
+ - kiểu dữ liệu trong js: 
+        + js không QUY ĐỊNH kiểu dữ liệu cho biến mà nó TỰ ĐỘNG xác định khi gán dữ liệu cho biến
+        + js có hai kiểu: primitive value(dữ liệu nguyên thủy: null, boolean, number, bigint, string, symbol) va objects
+        + primitive value có nghia là dữ liệu không thể thay đổi khi gán dữ liệu cho nó
+
+- khai báo biết: var, let, const
+
+
+ 
