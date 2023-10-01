@@ -103,11 +103,15 @@ $infoStudents = [
     ]
 
 ];
-//duyệt mảng
-foreach($infoStudents as $key => $info) {
-    //$key ?? 0,1,2
-    // $info : thông tin của một bạn sinh viên tương ứng(chín là mảng con)
-    //hiện thị tên của tất cả các bạn sinh viên ra
-    echo $info['name'];
-    echo '<br/>';
-}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
