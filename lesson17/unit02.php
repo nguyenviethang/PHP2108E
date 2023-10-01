@@ -57,9 +57,29 @@ $infoStudents = [
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach(): ?>
+                        <!-- ket hop giua php va html -->
+                        <?php $totalMoney = 0; ?>
+                        <?php  foreach($infoStudents as $key =>$item): ?>
+                            <?php $totalMoney += $item['money']; ?>
+                            <tr>
+                                <!-- <//?php echo ?> -->
+                                <td><?= $item['msv']; ?></td>
+                                <td><?= $item['name'];?></td>
+                                <td><?= $item['age'];?></td>
+                                <td><?= $item['email'];?></td>
+                                <td><?= $item['gender'] === 1 ?'Nam' : 'Nu';?></td>
+                                <td><?= $item['phone'];?></td>
+                                <td><?= number_format($item['money']);?></td>
+                            </tr>
+
                         <?php endforeach; ?>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Tong tien hoc bong</td>
+                            <td><?= number_format($totalMoney);?></td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         </div>
